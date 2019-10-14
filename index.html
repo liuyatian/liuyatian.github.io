@@ -298,39 +298,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><p>#####2019.10.14</p>
-<br>
+        <h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><h5 id="2019-10-14"><a href="#2019-10-14" class="headerlink" title="2019.10.14"></a>2019.10.14</h5><br>
 
 
 <h3 id="VPN代理上网"><a href="#VPN代理上网" class="headerlink" title="VPN代理上网"></a>VPN代理上网</h3><ul>
 <li><p>VPS(<a href="https://buyvm.net/" target="_blank" rel="noopener">BUYVM</a>)+Shadowsocks</p>
 <ul>
 <li><p>购买服务</p>
-<pre><code>BUYVM --&gt; Client Area --&gt; ORDER HOSTING --&gt; New York - OpenVZ,点击购买.
-
-之后账号发到邮箱，登陆[管理界面](https://manage.buyvm.net/)，可以选择重新安装系统(Ubuntu 16.04)， 设置好 root 密码， 及 IP 地址访问权限.
-
-远程登陆到服务器，`[ssh root@&lt;IP_Address&gt;]`，安装[shadowsocks](https://www.linuxbabe.com/ubuntu/shadowsocks-libev-proxy-server-ubuntu-16-04-17-10)，并添加到开机自启.
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#vi /etc/rc.local</span></span><br><span class="line">ss-server -p &lt;port&gt; -k &lt;passport&gt; -m aes-256-cfb &amp;</span><br></pre></td></tr></table></figure>
-
-客户端安装相应软件, 即可.</code></pre></li>
+<p> BUYVM–&gt;Client Area–&gt;ORDER HOSTING–&gt;New York-OpenVZ,点击购买.</p>
+<p> 之后账号发到邮箱，登陆<a href="https://manage.buyvm.net/" target="_blank" rel="noopener">管理界面</a>,可以选择重新安装系统(Ubuntu 16.04),设置好root密码,及IP地址访问权限.</p>
+<p> 远程登陆到服务器,<code>ssh root@&lt;IP_Address&gt;</code>,安装<a href="https://www.linuxbabe.com/ubuntu/shadowsocks-libev-proxy-server-ubuntu-16-04-17-10" target="_blank" rel="noopener">shadowsocks</a>,并添加到开机自启.</p>
+<pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#vi /etc/rc.local</span></span><br><span class="line">ss-server -p &lt;port&gt; -k &lt;passport&gt; -m aes-256-cfb &amp;</span><br></pre></td></tr></table></figure></code></pre><p>   客户端安装相应软件,即可.</p>
+</li>
 </ul>
 </li>
-<li><p>更改 hosts（IPv6）</p>
+<li><p>更改hosts(IPv6)</p>
 <ul>
 <li><p>Windows</p>
-<pre><code>找到`C:\Windows\System32\drivers\etc`目录下的hosts文件，以文本方式打开
-
-https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts
-
-打开上面网址，复制粘贴其中全部内容到`hosts`文件中。
-
-执行`ipconfig/flushdns`或重新登陆网络（学校无线网可用）即可。</code></pre></li>
+<p> 找到<code>C:\Windows\System32\drivers\etc</code>目录下的hosts文件,以文本方式打开</p>
+<p>  <a href="https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts" target="_blank" rel="noopener">https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts</a></p>
+<p> 打开上面网址,复制粘贴其中全部内容到<code>hosts</code>文件中.</p>
+<p>  执行<code>ipconfig/flushdns</code>或重新登陆网络(学校无线网可用)即可。</p>
+</li>
 <li><p>Unix/Linux</p>
-<pre><code>hosts --&gt; `/etc/hosts`
-
-其它设置类似windows环境。</code></pre></li>
+<p>hosts–&gt;<code>/etc/hosts</code></p>
+<p>其它设置类似windows环境.</p>
+</li>
 <li><p><a href="https://github.com/lennylxx/ipv6-hosts" target="_blank" rel="noopener">hosts文件来源</a></p>
 </li>
 <li><p><a href="https://www.zhihu.com/question/19782572" target="_blank" rel="noopener">修改 hosts 文件的原理</a></p>
