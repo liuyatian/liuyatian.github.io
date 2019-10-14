@@ -161,23 +161,99 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="博客的搭建"><a href="#博客的搭建" class="headerlink" title="博客的搭建"></a>博客的搭建</h2><h3 id="框架和主题"><a href="#框架和主题" class="headerlink" title="框架和主题"></a>框架和主题</h3><p>. Hexo<br>   . Hexo是一个快速高效的博客框架，支持使用Markdown<br>   . 插件丰富，扩展性强</p>
+        <h2 id="博客的搭建"><a href="#博客的搭建" class="headerlink" title="博客的搭建"></a>博客的搭建</h2><p>#####2019.10.14<br><br></p>
+<p>这个是我搭建的第一个博客，使用了Hexo框架，编辑用Markdown，mac笔记本操作，第一篇博文就记录一下博客的搭建过程吧。</p>
+<h3 id="框架和主题"><a href="#框架和主题" class="headerlink" title="框架和主题"></a>框架和主题</h3><ul>
+<li><p>Hexo</p>
 <ul>
-<li>yilia<ul>
+<li><p>Hexo是一个快速高效的博客框架，支持使用Markdown</p>
+</li>
+<li><p>插件丰富，扩展性强</p>
+</li>
+</ul>
+</li>
+<li><p>yilia</p>
+<ul>
 <li>这是一个广泛使用的主题</li>
 </ul>
 </li>
 </ul>
 <h3 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h3><ul>
-<li>git</li>
-<li>Node.js</li>
+<li><p>git</p>
+<p>版本控制系统，用来管理博客代码</p>
+</li>
+<li><p>Node.js</p>
+<p>hexo基于Node.js开发,下载hexo及其主题与插件都需要用到其中的npm工具</p>
+</li>
 </ul>
 <h3 id="Hexo的安装与配置"><a href="#Hexo的安装与配置" class="headerlink" title="Hexo的安装与配置"></a>Hexo的安装与配置</h3><p>打开命令行，通过npm工具下载hexo框架</p>
-<pre><code>`npm install hexo-cli -g`</code></pre><p>创建一个blog文件夹，并在这个文件夹中初始化一个hexo框架</p>
-<pre><code>`hexo init blog`</code></pre><p>进入blog文件夹</p>
-<pre><code>`cd blog`</code></pre><p>安装npm</p>
-<pre><code>`npm install`</code></pre><p>启动hexo服务器</p>
-<pre><code>`hexo s`</code></pre><p>配置_config文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>创建一个blog文件夹，并在这个文件夹中初始化一个hexo框架</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+
+<p>进入blog文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+
+<p>安装npm</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>启动hexo服务器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+
+<p>配置config文件</p>
+<p>在主题目录下的<em>_config.yml</em>文件,就是主题配置文件<br>可以在里面修改大部分的主题配置<br>详细可参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">主题作者的配置说明</a>描述</p>
+<p>###主题的安装</p>
+<ul>
+<li><p>yilia主题安装</p>
+<ul>
+<li><p>执行以下命令</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装完成后，代考themes文件夹即可看到下载的主题文件夹</p>
+</li>
+<li><p>打开文件根目录下的<code>_config.yml</code>对theme的属性值进行编辑</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1 <span class="comment">#Extensions</span></span><br><span class="line">2 <span class="comment">#Plugins: https://hexo.io.plugins/</span></span><br><span class="line">3 <span class="comment">##Themes: https://hexo.io.themes/</span></span><br><span class="line">4 theme: yilia <span class="comment">#这里填写的主题的名字要对应主题文件夹的名字</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开命令行输入<code>hexo g</code>，重新生成静态文件，然后输入<code>hexo s</code>重启服务器即可通过localhost:4000，在浏览器中访问生成的主题博客</p>
+</li>
+</ul>
+</li>
+<li><p>yilia主题配置</p>
+<ul>
+<li>在主题目录下的_config.yml文件,就是主题配置文件<br>可以在里面修改大部分的主题配置<br>详细可参考<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">主题作者的配置说明</a>描述</li>
+</ul>
+</li>
+</ul>
+<p>###部署到GitHub服务器上</p>
+<ul>
+<li><p>在GitHub上新建一个仓库,仓库名必须设置为:<code>yourName.github.io</code>，其中<code>yourName</code>为GitHub用户名.之后就会通过<a href="https://yourName.github.io访问这个仓库的README.md文件或index.html文件" target="_blank" rel="noopener">https://yourName.github.io访问这个仓库的README.md文件或index.html文件</a>.</p>
+</li>
+<li><p>此时的博客只能在本地通过<a href="http://localhost:4000/来访问,如果需要别人也能访问,就需要将Hexo与GitHub联系起来,也就是将Hexo生成的文件部署到GitHub上" target="_blank" rel="noopener">http://localhost:4000/来访问,如果需要别人也能访问,就需要将Hexo与GitHub联系起来,也就是将Hexo生成的文件部署到GitHub上</a></p>
+</li>
+<li><p>打开Hexo配置文件_config.yml,在文件最后添加以下代码,同时打开仓库yourName.github.io的主页,点击绿色按钮Clone or download获取仓库的HTTPS地址.</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1	deploy:</span><br><span class="line">2	<span class="built_in">type</span>: git <span class="comment"># 部署方式为git</span></span><br><span class="line">3	repo: https://github.com/yourName/yourName.github.io.git <span class="comment"># 部署的仓库地址</span></span><br><span class="line">4	branch: master <span class="comment"># 部署的分支为主分支</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>这个时候需要先安装deploy-git ,也就是部署的命令,这样你才能用命令部署到GitHub.</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开始部署</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1	hexo clean <span class="comment">#清除本地缓存,也可以跳过这一步</span></span><br><span class="line">2	hexo generate <span class="comment">#生成静态资源 简写:hexo g</span></span><br><span class="line">3	hexo deploy <span class="comment">#部署资源 简写:hexo d</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>###域名解析</p>
+<ul>
+<li><p>注册个人域名</p>
+</li>
+<li><p>添加域名解析</p>
+</li>
+</ul>
+<p>##参考文献</p>
+<p><a href="https://www.yanzehao.top/2018/12/24/%E8%B0%88%E8%B0%88%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">https://www.yanzehao.top/2018/12/24/%E8%B0%88%E8%B0%88%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</a></p>
+<p><a href="https://www.bilibili.com/video/av44544186?t=446" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186?t=446</a></p>
+<p>以上是我学习以上两个资料而搭建博客的过程。</p>
 
       
 
