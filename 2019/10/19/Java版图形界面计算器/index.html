@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://liuyatian.top">
-  <title>Archives: 2019 | liuyatian的博客</title>
+  <title>Java版图形界面计算器 | liuyatian的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="汽车，发动机，变速器，代码，编程，java,python">
-<meta property="og:type" content="website">
-<meta property="og:title" content="liuyatian的博客">
-<meta property="og:url" content="http://liuyatian.top/archives/2019/index.html">
+  <meta name="description" content="介绍本次项目利用Java开发一个可以进行简单的四则运算的图形化计算器，会使用到Java Swing图形组件进行开发 环境 Ubuntu unix  JDK1.8  Xfce终端  Eclipes   代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152">
+<meta name="keywords" content="汽车，发动机，变速器，代码，编程，java,python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java版图形界面计算器">
+<meta property="og:url" content="http://liuyatian.top/2019/10/19/Java版图形界面计算器/index.html">
 <meta property="og:site_name" content="liuyatian的博客">
+<meta property="og:description" content="介绍本次项目利用Java开发一个可以进行简单的四则运算的图形化计算器，会使用到Java Swing图形组件进行开发 环境 Ubuntu unix  JDK1.8  Xfce终端  Eclipes   代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-03T02:02:11.710Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="liuyatian的博客">
+<meta name="twitter:title" content="Java版图形界面计算器">
+<meta name="twitter:description" content="介绍本次项目利用Java开发一个可以进行简单的四则运算的图形化计算器，会使用到Java Swing图形组件进行开发 环境 Ubuntu unix  JDK1.8  Xfce终端  Eclipes   代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152">
   
     <link rel="alternative" href="/atom.xml" title="liuyatian的博客" type="application/atom+xml">
   
@@ -155,130 +159,204 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Java版图形界面计算器" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Java版图形界面计算器
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/19/Java版图形界面计算器/" class="archive-article-date">
+
+        
+        <a href="/2019/10/19/Java版图形界面计算器/" class="archive-article-date">
   	<time datetime="2019-10-19T07:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-19</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/19/Java版图形界面计算器/">Java版图形界面计算器</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <br>
 
-        <div class="article-info info-on-right">
-          
-          
 
+<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>本次项目利用Java开发一个可以进行简单的四则运算的图形化计算器，会使用到Java Swing图形组件进行开发</p>
+<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><ul>
+<li><p>Ubuntu unix</p>
+</li>
+<li><p>JDK1.8</p>
+</li>
+<li><p>Xfce终端</p>
+</li>
+<li><p>Eclipes</p>
+</li>
+</ul>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.shiyanlou.calculator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"><span class="keyword">import</span> java.awt.event.*;</span><br><span class="line"><span class="keyword">import</span> javax.swing.*;</span><br><span class="line"><span class="keyword">import</span> java.util.Vector;</span><br><span class="line"><span class="keyword">import</span> java.math.BigDecimal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Calculator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 操作数1，为了程序的安全，初值一定设置，这里我们设置为0。</span></span><br><span class="line">	String str1 = <span class="string">"0"</span>; </span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 操作数2</span></span><br><span class="line">	String str2 = <span class="string">"0"</span>; </span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 运算符</span></span><br><span class="line">	String signal = <span class="string">"+"</span>; </span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 运算结果</span></span><br><span class="line">	String result = <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 以下k1至k2为状态开关</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 开关1用于选择输入方向，将要写入str1或str2</span></span><br><span class="line">	<span class="keyword">int</span> k1 = <span class="number">1</span>;</span><br><span class="line">	<span class="comment">// 开关2用于记录符号键的次数，如果 k2&gt;1 说明进行的是 2+3-9+8 这样的多符号运算</span></span><br><span class="line">	<span class="keyword">int</span> k2 = <span class="number">1</span>;</span><br><span class="line">	<span class="comment">// 开关3用于标识 str1 是否可以被清0 ，等于1时可以，不等于1时不能被清0</span></span><br><span class="line">	<span class="keyword">int</span> k3 = <span class="number">1</span>;</span><br><span class="line">	<span class="comment">// 开关4用于标识 str2 是否可以被清0</span></span><br><span class="line">	<span class="keyword">int</span> k4 = <span class="number">1</span>;</span><br><span class="line">	<span class="comment">// 开关5用于控制小数点可否被录入，等于1时可以，不为1时，输入的小数点被丢掉</span></span><br><span class="line">	<span class="keyword">int</span> k5 = <span class="number">1</span>;</span><br><span class="line">	<span class="comment">// store的作用类似于寄存器，用于记录是否连续按下符号键</span></span><br><span class="line">	JButton store; </span><br><span class="line">	</span><br><span class="line">	<span class="meta">@SuppressWarnings</span>(<span class="string">"rawtypes"</span>)</span><br><span class="line">	Vector vt = <span class="keyword">new</span> Vector(<span class="number">20</span>, <span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 声明各个UI组件对象并初始化</span></span><br><span class="line">	JFrame frame = <span class="keyword">new</span> JFrame(<span class="string">"Calculator"</span>);</span><br><span class="line">	JTextField result_TextField = <span class="keyword">new</span> JTextField(result, <span class="number">20</span>);</span><br><span class="line">	JButton clear_Button = <span class="keyword">new</span> JButton(<span class="string">"Clear"</span>);</span><br><span class="line">	JButton button0 = <span class="keyword">new</span> JButton(<span class="string">"0"</span>);</span><br><span class="line">	JButton button1 = <span class="keyword">new</span> JButton(<span class="string">"1"</span>);</span><br><span class="line">	JButton button2 = <span class="keyword">new</span> JButton(<span class="string">"2"</span>);</span><br><span class="line">	JButton button3 = <span class="keyword">new</span> JButton(<span class="string">"3"</span>);</span><br><span class="line">	JButton button4 = <span class="keyword">new</span> JButton(<span class="string">"4"</span>);</span><br><span class="line">	JButton button5 = <span class="keyword">new</span> JButton(<span class="string">"5"</span>);</span><br><span class="line">	JButton button6 = <span class="keyword">new</span> JButton(<span class="string">"6"</span>);</span><br><span class="line">	JButton button7 = <span class="keyword">new</span> JButton(<span class="string">"7"</span>);</span><br><span class="line">	JButton button8 = <span class="keyword">new</span> JButton(<span class="string">"8"</span>);</span><br><span class="line">	JButton button9 = <span class="keyword">new</span> JButton(<span class="string">"9"</span>);</span><br><span class="line">	JButton button_Dian = <span class="keyword">new</span> JButton(<span class="string">"."</span>);</span><br><span class="line">	JButton button_jia = <span class="keyword">new</span> JButton(<span class="string">"+"</span>);</span><br><span class="line">	JButton button_jian = <span class="keyword">new</span> JButton(<span class="string">"-"</span>);</span><br><span class="line">	JButton button_cheng = <span class="keyword">new</span> JButton(<span class="string">"*"</span>);</span><br><span class="line">	JButton button_chu = <span class="keyword">new</span> JButton(<span class="string">"/"</span>);</span><br><span class="line">	JButton button_dy = <span class="keyword">new</span> JButton(<span class="string">"="</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 计算机类的构造器</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Calculator</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	    <span class="comment">// 为按钮设置等效键，即可以通过对应的键盘按键来代替点击它</span></span><br><span class="line">		button0.setMnemonic(KeyEvent.VK_0);</span><br><span class="line">		<span class="comment">// 其它等效键省略，你可以自行补充完整</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置文本框为右对齐，使输入和结果都靠右显示</span></span><br><span class="line">		result_TextField.setHorizontalAlignment(JTextField.RIGHT);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 将UI组件添加进容器内</span></span><br><span class="line">		JPanel pan = <span class="keyword">new</span> JPanel();</span><br><span class="line">		pan.setLayout(<span class="keyword">new</span> GridLayout(<span class="number">4</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">5</span>));</span><br><span class="line">		pan.add(button7);</span><br><span class="line">		pan.add(button8);</span><br><span class="line">		pan.add(button9);</span><br><span class="line">		pan.add(button_chu);</span><br><span class="line">		pan.add(button4);</span><br><span class="line">		pan.add(button5);</span><br><span class="line">		pan.add(button6);</span><br><span class="line">		pan.add(button_cheng);</span><br><span class="line">		pan.add(button1);</span><br><span class="line">		pan.add(button2);</span><br><span class="line">		pan.add(button3);</span><br><span class="line">		pan.add(button_jian);</span><br><span class="line">		pan.add(button0);</span><br><span class="line">		pan.add(button_Dian);</span><br><span class="line">		pan.add(button_dy);</span><br><span class="line">		pan.add(button_jia);</span><br><span class="line">		pan.setBorder(BorderFactory.createEmptyBorder(<span class="number">5</span>, <span class="number">5</span>, <span class="number">5</span>, <span class="number">5</span>));</span><br><span class="line"></span><br><span class="line">		JPanel pan2 = <span class="keyword">new</span> JPanel();</span><br><span class="line">		pan2.setLayout(<span class="keyword">new</span> BorderLayout());</span><br><span class="line">		pan2.add(result_TextField, BorderLayout.WEST);</span><br><span class="line">		pan2.add(clear_Button, BorderLayout.EAST);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置主窗口出现在屏幕上的位置</span></span><br><span class="line">		frame.setLocation(<span class="number">300</span>, <span class="number">200</span>);</span><br><span class="line">		<span class="comment">// 设置窗体不能调大小</span></span><br><span class="line">		frame.setResizable(<span class="keyword">false</span>); </span><br><span class="line">		frame.getContentPane().setLayout(<span class="keyword">new</span> BorderLayout());</span><br><span class="line">		frame.getContentPane().add(pan2, BorderLayout.NORTH);</span><br><span class="line">		frame.getContentPane().add(pan, BorderLayout.CENTER);</span><br><span class="line"></span><br><span class="line">		frame.pack();</span><br><span class="line">		frame.setVisible(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 事件处理程序</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 数字键</span></span><br><span class="line">		<span class="class"><span class="keyword">class</span> <span class="title">Listener</span> <span class="keyword">implements</span> <span class="title">ActionListener</span> </span>&#123;</span><br><span class="line">			<span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>&#123;</span><br><span class="line">				String ss = ((JButton) e.getSource()).getText();</span><br><span class="line">				store = (JButton) e.getSource();</span><br><span class="line">				vt.add(store);</span><br><span class="line">				<span class="keyword">if</span> (k1 == <span class="number">1</span>) &#123;</span><br><span class="line">					<span class="keyword">if</span> (k3 == <span class="number">1</span>) &#123;</span><br><span class="line">						str1 = <span class="string">""</span>;</span><br><span class="line">						</span><br><span class="line">						<span class="comment">// 还原开关k5状态</span></span><br><span class="line">						k5 = <span class="number">1</span>;</span><br><span class="line">					&#125;</span><br><span class="line">					str1 = str1 + ss;</span><br><span class="line"></span><br><span class="line">					k3 = k3 + <span class="number">1</span>;</span><br><span class="line">                    </span><br><span class="line">                    <span class="comment">// 显示结果</span></span><br><span class="line">					result_TextField.setText(str1);</span><br><span class="line"></span><br><span class="line">				&#125; <span class="keyword">else</span> <span class="keyword">if</span> (k1 == <span class="number">2</span>) &#123;</span><br><span class="line">					<span class="keyword">if</span> (k4 == <span class="number">1</span>) &#123;</span><br><span class="line">						str2 = <span class="string">""</span>;</span><br><span class="line">						</span><br><span class="line">						<span class="comment">// 还原开关k5状态</span></span><br><span class="line">						k5 = <span class="number">1</span>; </span><br><span class="line">					&#125;</span><br><span class="line">					str2 = str2 + ss;</span><br><span class="line">					k4 = k4 + <span class="number">1</span>;</span><br><span class="line">					result_TextField.setText(str2);</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 输入的运算符号的处理</span></span><br><span class="line">		<span class="class"><span class="keyword">class</span> <span class="title">Listener_signal</span> <span class="keyword">implements</span> <span class="title">ActionListener</span> </span>&#123;</span><br><span class="line">			<span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>&#123;</span><br><span class="line">				String ss2 = ((JButton) e.getSource()).getText();</span><br><span class="line">				store = (JButton) e.getSource();</span><br><span class="line">				vt.add(store);</span><br><span class="line"></span><br><span class="line">				<span class="keyword">if</span> (k2 == <span class="number">1</span>) &#123;</span><br><span class="line">				    <span class="comment">// 开关 k1 为 1 时向数 1 写输入值，为2时向数2写输入值。</span></span><br><span class="line">					k1 = <span class="number">2</span>;</span><br><span class="line">					k5 = <span class="number">1</span>;</span><br><span class="line">					signal = ss2;</span><br><span class="line">					k2 = k2 + <span class="number">1</span>;<span class="comment">// 按符号键的次数</span></span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					<span class="keyword">int</span> a = vt.size();</span><br><span class="line">					JButton c = (JButton) vt.get(a - <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">					<span class="keyword">if</span> (!(c.getText().equals(<span class="string">"+"</span>))</span><br><span class="line">							&amp;&amp; !(c.getText().equals(<span class="string">"-"</span>))</span><br><span class="line">							&amp;&amp; !(c.getText().equals(<span class="string">"*"</span>))</span><br><span class="line">							&amp;&amp; !(c.getText().equals(<span class="string">"/"</span>)))</span><br><span class="line"></span><br><span class="line">					&#123;</span><br><span class="line">						cal();</span><br><span class="line">						str1 = result;</span><br><span class="line">						<span class="comment">// 开关 k1 为 1 时，向数 1 写值，为2时向数2写</span></span><br><span class="line">						k1 = <span class="number">2</span>;</span><br><span class="line">						k5 = <span class="number">1</span>;</span><br><span class="line">						k4 = <span class="number">1</span>;</span><br><span class="line">						signal = ss2;</span><br><span class="line">					&#125;</span><br><span class="line">					k2 = k2 + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 清除键的逻辑（Clear）</span></span><br><span class="line">		<span class="class"><span class="keyword">class</span> <span class="title">Listener_clear</span> <span class="keyword">implements</span> <span class="title">ActionListener</span> </span>&#123;</span><br><span class="line">			<span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>&#123;</span><br><span class="line">				store = (JButton) e.getSource();</span><br><span class="line">				vt.add(store);</span><br><span class="line">				k5 = <span class="number">1</span>;</span><br><span class="line">				k2 = <span class="number">1</span>;</span><br><span class="line">				k1 = <span class="number">1</span>;</span><br><span class="line">				k3 = <span class="number">1</span>;</span><br><span class="line">				k4 = <span class="number">1</span>;</span><br><span class="line">				str1 = <span class="string">"0"</span>;</span><br><span class="line">				str2 = <span class="string">"0"</span>;</span><br><span class="line">				signal = <span class="string">""</span>;</span><br><span class="line">				result = <span class="string">""</span>;</span><br><span class="line">				result_TextField.setText(result);</span><br><span class="line">				vt.clear();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 等于键的逻辑</span></span><br><span class="line">		<span class="class"><span class="keyword">class</span> <span class="title">Listener_dy</span> <span class="keyword">implements</span> <span class="title">ActionListener</span> </span>&#123;</span><br><span class="line">			<span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">				store = (JButton) e.getSource();</span><br><span class="line">				vt.add(store);</span><br><span class="line">				cal();</span><br><span class="line">				</span><br><span class="line">				<span class="comment">// 还原各个开关的状态</span></span><br><span class="line">				k1 = <span class="number">1</span>; </span><br><span class="line">				k2 = <span class="number">1</span>;</span><br><span class="line">				k3 = <span class="number">1</span>;</span><br><span class="line">				k4 = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">				str1 = result; </span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 小数点的处理</span></span><br><span class="line">		<span class="class"><span class="keyword">class</span> <span class="title">Listener_xiaos</span> <span class="keyword">implements</span> <span class="title">ActionListener</span> </span>&#123;</span><br><span class="line">			<span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>&#123;</span><br><span class="line">				store = (JButton) e.getSource();</span><br><span class="line">				vt.add(store);</span><br><span class="line">				<span class="keyword">if</span> (k5 == <span class="number">1</span>) &#123;</span><br><span class="line">					String ss2 = ((JButton) e.getSource()).getText();</span><br><span class="line">					<span class="keyword">if</span> (k1 == <span class="number">1</span>) &#123;</span><br><span class="line">						<span class="keyword">if</span> (k3 == <span class="number">1</span>) &#123;</span><br><span class="line">							str1 = <span class="string">""</span>;</span><br><span class="line">							<span class="comment">// 还原开关k5状态</span></span><br><span class="line">							k5 = <span class="number">1</span>; </span><br><span class="line">						&#125;</span><br><span class="line">						str1 = str1 + ss2;</span><br><span class="line"></span><br><span class="line">						k3 = k3 + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">                        <span class="comment">// 显示结果</span></span><br><span class="line">						result_TextField.setText(str1);</span><br><span class="line"></span><br><span class="line">					&#125; <span class="keyword">else</span> <span class="keyword">if</span> (k1 == <span class="number">2</span>) &#123;</span><br><span class="line">						<span class="keyword">if</span> (k4 == <span class="number">1</span>) &#123;</span><br><span class="line">							str2 = <span class="string">""</span>;</span><br><span class="line">							<span class="comment">// 还原开关k5的状态</span></span><br><span class="line">							k5 = <span class="number">1</span>;</span><br><span class="line">						&#125;</span><br><span class="line">						str2 = str2 + ss2;</span><br><span class="line"></span><br><span class="line">						k4 = k4 + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">						result_TextField.setText(str2);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">				k5 = k5 + <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 注册各个监听器，即绑定事件响应逻辑到各个UI组件上</span></span><br><span class="line">		Listener_dy jt_dy = <span class="keyword">new</span> Listener_dy();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 监听数字键</span></span><br><span class="line">		Listener jt = <span class="keyword">new</span> Listener();</span><br><span class="line">		<span class="comment">// 监听符号键</span></span><br><span class="line">		Listener_signal jt_signal = <span class="keyword">new</span> Listener_signal();</span><br><span class="line">		<span class="comment">// 监听清除键</span></span><br><span class="line">		Listener_clear jt_c = <span class="keyword">new</span> Listener_clear(); </span><br><span class="line">		<span class="comment">// 监听小数点键</span></span><br><span class="line">		Listener_xiaos jt_xs = <span class="keyword">new</span> Listener_xiaos();</span><br><span class="line"></span><br><span class="line">		button7.addActionListener(jt);</span><br><span class="line">		button8.addActionListener(jt);</span><br><span class="line">		button9.addActionListener(jt);</span><br><span class="line">		button_chu.addActionListener(jt_signal);</span><br><span class="line">		button4.addActionListener(jt);</span><br><span class="line">		button5.addActionListener(jt);</span><br><span class="line">		button6.addActionListener(jt);</span><br><span class="line">		button_cheng.addActionListener(jt_signal);</span><br><span class="line">		button1.addActionListener(jt);</span><br><span class="line">		button2.addActionListener(jt);</span><br><span class="line">		button3.addActionListener(jt);</span><br><span class="line">		button_jian.addActionListener(jt_signal);</span><br><span class="line">		button0.addActionListener(jt);</span><br><span class="line">		button_Dian.addActionListener(jt_xs);</span><br><span class="line">		button_dy.addActionListener(jt_dy);</span><br><span class="line">		button_jia.addActionListener(jt_signal);</span><br><span class="line">		clear_Button.addActionListener(jt_c);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 窗体关闭事件的响应程序</span></span><br><span class="line">		frame.addWindowListener(<span class="keyword">new</span> WindowAdapter() &#123;</span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">windowClosing</span><span class="params">(WindowEvent e)</span> </span>&#123;</span><br><span class="line">				System.exit(<span class="number">0</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 计算逻辑</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">cal</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    	<span class="comment">// 操作数1</span></span><br><span class="line">		<span class="keyword">double</span> a2;</span><br><span class="line">		<span class="comment">// 操作数2</span></span><br><span class="line">		<span class="keyword">double</span> b2;</span><br><span class="line">		<span class="comment">// 运算符</span></span><br><span class="line">		String c = signal;</span><br><span class="line">		<span class="comment">// 运算结果</span></span><br><span class="line">		<span class="keyword">double</span> result2 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (c.equals(<span class="string">""</span>)) &#123;</span><br><span class="line">			result_TextField.setText(<span class="string">"Please input operator"</span>);</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 手动处理小数点的问题</span></span><br><span class="line">			<span class="keyword">if</span> (str1.equals(<span class="string">"."</span>))</span><br><span class="line">				str1 = <span class="string">"0.0"</span>;</span><br><span class="line">			<span class="keyword">if</span> (str2.equals(<span class="string">"."</span>))</span><br><span class="line">				str2 = <span class="string">"0.0"</span>;</span><br><span class="line">			a2 = Double.valueOf(str1).doubleValue();</span><br><span class="line">			b2 = Double.valueOf(str2).doubleValue();</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span> (c.equals(<span class="string">"+"</span>)) &#123;</span><br><span class="line">				result2 = a2 + b2;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (c.equals(<span class="string">"-"</span>)) &#123;</span><br><span class="line">				result2 = a2 - b2;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (c.equals(<span class="string">"*"</span>)) &#123;</span><br><span class="line">				BigDecimal m1 = <span class="keyword">new</span> BigDecimal(Double.toString(a2));</span><br><span class="line">			        BigDecimal m2 = <span class="keyword">new</span> BigDecimal(Double.toString(b2));</span><br><span class="line">			        result2 = m1.multiply(m2).doubleValue();</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (c.equals(<span class="string">"/"</span>)) &#123;</span><br><span class="line">				<span class="keyword">if</span> (b2 == <span class="number">0</span>) &#123;</span><br><span class="line">					result2 = <span class="number">0</span>;</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					result2 = a2 / b2;</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			result = ((<span class="keyword">new</span> Double(result2)).toString());</span><br><span class="line"></span><br><span class="line">			result_TextField.setText(result);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@SuppressWarnings</span>(<span class="string">"unused"</span>)</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 设置程序显示的界面风格，可以去除</span></span><br><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line">			UIManager.setLookAndFeel(<span class="string">"javax.swing.plaf.metal.MetalLookAndFeel"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		Calculator cal = <span class="keyword">new</span> Calculator();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://liuyatian.top/2019/10/19/Java版图形界面计算器/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/14/科学上网/" class="archive-article-date">
-  	<time datetime="2019-10-14T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/14/科学上网/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">科学上网</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/14/科学上网/">科学上网</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#介绍"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-number">2.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/13/个人博客的搭建/" class="archive-article-date">
-  	<time datetime="2019-10-13T14:18:22.448Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-13</time>
-</a>
-        </div>
-    	 
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Java版图形界面计算器" data-title="Java版图形界面计算器" data-url="http://liuyatian.top/2019/10/19/Java版图形界面计算器/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/13/个人博客的搭建/">博客的搭建</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/13/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-13T08:41:48.819Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/13/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -301,8 +379,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
