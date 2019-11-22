@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://liuyatian.top">
   <title>mac安装java8和java12 | liuyatian的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="直接安装  dmp包直接安装两个版本的jdk，比如我这里安装的1.8.0_231 、12.0.1  配置环境 打开环境变量配置文件bash_profile 1vim ~/.bash_profile  123456export JAVA_8_HOME=&quot;/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home&quot;expo">
+  <meta name="description" content="直接安装   dmp包直接安装两个版本的jdk，比如我这里安装的1.8.0_231 、12.0.1 配置环境  打开环境变量配置文件bash_profile   1vim ~/.bash_profile    123456export JAVA_8_HOME=&quot;/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home&quot;">
 <meta name="keywords" content="汽车，发动机，变速器，代码，编程，java,python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mac安装java8和java12">
 <meta property="og:url" content="http://liuyatian.top/2019/11/22/mac 安装java8和java12/index.html">
 <meta property="og:site_name" content="liuyatian的博客">
-<meta property="og:description" content="直接安装  dmp包直接安装两个版本的jdk，比如我这里安装的1.8.0_231 、12.0.1  配置环境 打开环境变量配置文件bash_profile 1vim ~/.bash_profile  123456export JAVA_8_HOME=&quot;/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home&quot;expo">
+<meta property="og:description" content="直接安装   dmp包直接安装两个版本的jdk，比如我这里安装的1.8.0_231 、12.0.1 配置环境  打开环境变量配置文件bash_profile   1vim ~/.bash_profile    123456export JAVA_8_HOME=&quot;/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home&quot;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-22T08:55:42.750Z">
+<meta property="og:updated_time" content="2019-11-22T09:02:42.065Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mac安装java8和java12">
-<meta name="twitter:description" content="直接安装  dmp包直接安装两个版本的jdk，比如我这里安装的1.8.0_231 、12.0.1  配置环境 打开环境变量配置文件bash_profile 1vim ~/.bash_profile  123456export JAVA_8_HOME=&quot;/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home&quot;expo">
+<meta name="twitter:description" content="直接安装   dmp包直接安装两个版本的jdk，比如我这里安装的1.8.0_231 、12.0.1 配置环境  打开环境变量配置文件bash_profile   1vim ~/.bash_profile    123456export JAVA_8_HOME=&quot;/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home&quot;">
   
     <link rel="alternative" href="/atom.xml" title="liuyatian的博客" type="application/atom+xml">
   
@@ -183,33 +183,23 @@
 
 
 
-<ul>
-<li><p>直接安装</p>
-<p> dmp包直接安装两个版本的jdk，比如我这里安装的1.8.0_231 、12.0.1</p>
-</li>
-<li><p>配置环境</p>
-<p>打开环境变量配置文件bash_profile</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br></pre></td></tr></table></figure>
+<h3 id="直接安装"><a href="#直接安装" class="headerlink" title="直接安装"></a>直接安装</h3><p>   dmp包直接安装两个版本的jdk，比如我这里安装的1.8.0_231 、12.0.1</p>
+<h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>  打开环境变量配置文件bash_profile</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_8_HOME=<span class="string">"/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home"</span></span><br><span class="line">export JAVA_12_HOME=<span class="string">"/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home"</span></span><br><span class="line">alias jdk8=<span class="string">"export JAVA_HOME=$JAVA_8_HOME"</span></span><br><span class="line">alias jdk12=<span class="string">"export JAVA_HOME=$JAVA_12_HOME"</span></span><br><span class="line">export JAVA_HOME=$JAVA_8_HOME</span><br><span class="line">export PATH=<span class="string">"$JAVA_HOME:$PATH"</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_8_HOME=<span class="string">"/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home"</span></span><br><span class="line">export JAVA_12_HOME=<span class="string">"/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home"</span></span><br><span class="line">alias jdk8=<span class="string">"export JAVA_HOME=$JAVA_8_HOME"</span></span><br><span class="line">alias jdk12=<span class="string">"export JAVA_HOME=$JAVA_12_HOME"</span></span><br><span class="line">export JAVA_HOME=$JAVA_8_HOME</span><br><span class="line">export PATH=<span class="string">"$JAVA_HOME:$PATH"</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>任意切换java环境</p>
-<p>控制台输入jdk8或者jdk12就会自动切换</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">liuyatiandeMacBook-Pro:~ liuyatian$ jdk8</span><br><span class="line">liuyatiandeMacBook-Pro:~ liuyatian$ java -version</span><br><span class="line">java version <span class="string">"1.8.0_231"</span></span><br><span class="line">Java(TM) SE Runtime Environment (build 1.8.0_231-b11)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.231-b11, mixed mode)</span><br><span class="line">liuyatiandeMacBook-Pro:~ liuyatian$ jdk12</span><br><span class="line">liuyatiandeMacBook-Pro:~ liuyatian$ java -version</span><br><span class="line">java version <span class="string">"12.0.1"</span> 2019-04-16</span><br><span class="line">Java(TM) SE Runtime Environment (build 12.0.1+12)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 12.0.1+12, mixed mode, sharing)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除jdk</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin </span><br><span class="line">sudo rm -fr /Library/PreferencesPanes/JavaControlPanel.prefpane</span><br></pre></td></tr></table></figure>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br></pre></td></tr></table></figure>
 
-<p>查找当前版本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls /Library/Java/JavaVirtualMachines/</span><br></pre></td></tr></table></figure>
+<h3 id="任意切换java环境"><a href="#任意切换java环境" class="headerlink" title="任意切换java环境"></a>任意切换java环境</h3><p>  控制台输入jdk8或者jdk12就会自动切换</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">liuyatiandeMacBook-Pro:~ liuyatian$ jdk8</span><br><span class="line">liuyatiandeMacBook-Pro:~ liuyatian$ java -version</span><br><span class="line">java version <span class="string">"1.8.0_231"</span></span><br><span class="line">Java(TM) SE Runtime Environment (build 1.8.0_231-b11)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.231-b11, mixed mode)</span><br><span class="line">liuyatiandeMacBook-Pro:~ liuyatian$ jdk12</span><br><span class="line">liuyatiandeMacBook-Pro:~ liuyatian$ java -version</span><br><span class="line">java version <span class="string">"12.0.1"</span> 2019-04-16</span><br><span class="line">Java(TM) SE Runtime Environment (build 12.0.1+12)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 12.0.1+12, mixed mode, sharing)</span><br></pre></td></tr></table></figure>
 
-<p>删除</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s</span><br></pre></td></tr></table></figure>
+<h3 id="删除jdk"><a href="#删除jdk" class="headerlink" title="删除jdk"></a>删除jdk</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin </span><br><span class="line">sudo rm -fr /Library/PreferencesPanes/JavaControlPanel.prefpane</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
+<p>  查找当前版本<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls /Library/Java/JavaVirtualMachines/</span><br></pre></td></tr></table></figure></p>
+<p>  删除</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -303,15 +293,6 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/22/mac 安装java8和java12/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
   
     <a href="/2019/10/19/Java版图形界面计算器/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Java版图形界面计算器</div>
@@ -341,7 +322,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#直接安装"><span class="toc-number">1.</span> <span class="toc-text">直接安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置环境"><span class="toc-number">2.</span> <span class="toc-text">配置环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#任意切换java环境"><span class="toc-number">3.</span> <span class="toc-text">任意切换java环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除jdk"><span class="toc-number">4.</span> <span class="toc-text">删除jdk</span></a></li></ol>
                     </div>
                 </span>
             </div>
